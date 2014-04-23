@@ -237,15 +237,9 @@ int drawable abc_textfield_searchview_right_holo_light 0x7f020056
 int drawable arrow 0x7f020057
 int drawable ic_launcher 0x7f020058
 int drawable landingpage 0x7f020059
-<<<<<<< HEAD
-int id Item 0x7f050047
+int id Item 0x7f050046
 int id Items 0x7f05003c
 int id Schedule 0x7f050045
-=======
-int id Item 0x7f050048
-int id Items 0x7f05003c
-int id Schedule 0x7f050046
->>>>>>> f483bde3ade6fdecb3f6df502e235021081a1a55
 int id action_bar 0x7f05001c
 int id action_bar_activity_content 0x7f050015
 int id action_bar_container 0x7f05001b
@@ -257,17 +251,12 @@ int id action_context_bar 0x7f05001d
 int id action_menu_divider 0x7f050016
 int id action_menu_presenter 0x7f050017
 int id action_mode_close_button 0x7f050024
-int id action_settings 0x7f05004c
+int id action_settings 0x7f05004b
 int id activity_chooser_view_content 0x7f050025
 int id always 0x7f05000b
 int id beginning 0x7f050011
-<<<<<<< HEAD
-int id button1 0x7f05004a
+int id button1 0x7f050049
 int id button2 0x7f050044
-=======
-int id button1 0x7f050043
-int id button2 0x7f050045
->>>>>>> f483bde3ade6fdecb3f6df502e235021081a1a55
 int id checkbox 0x7f05002d
 int id collapseActionView 0x7f05000d
 int id default_activity_button 0x7f050028
@@ -276,45 +265,28 @@ int id disableHome 0x7f050008
 int id dropdown 0x7f05000f
 int id editText1 0x7f050040
 int id editText2 0x7f050041
-<<<<<<< HEAD
 int id editText3 0x7f050043
 int id edit_query 0x7f050030
 int id end 0x7f050013
 int id expand_activities_button 0x7f050026
-int id expandableListView1 0x7f050048
-=======
-int id editText3 0x7f050044
-int id edit_query 0x7f050030
-int id end 0x7f050013
-int id expand_activities_button 0x7f050026
-int id expandableListView1 0x7f050049
->>>>>>> f483bde3ade6fdecb3f6df502e235021081a1a55
+int id expandableListView1 0x7f050047
 int id expanded_menu 0x7f05002c
 int id home 0x7f050014
 int id homeAsUp 0x7f050005
 int id icon 0x7f05002a
 int id ifRoom 0x7f05000a
 int id image 0x7f050027
-<<<<<<< HEAD
-int id imageButton1 0x7f050049
-=======
-int id imageButton1 0x7f05004a
->>>>>>> f483bde3ade6fdecb3f6df502e235021081a1a55
+int id imageButton1 0x7f050048
 int id listMode 0x7f050001
 int id list_item 0x7f050029
 int id middle 0x7f050012
 int id never 0x7f050009
 int id none 0x7f050010
 int id normal 0x7f050000
-int id progressBar1 0x7f05004b
+int id progressBar1 0x7f05004a
 int id progress_circular 0x7f050018
 int id progress_horizontal 0x7f050019
 int id radio 0x7f05002f
-<<<<<<< HEAD
-int id radioButton1 0x7f050046
-=======
-int id radioButton1 0x7f050047
->>>>>>> f483bde3ade6fdecb3f6df502e235021081a1a55
 int id search_badge 0x7f050032
 int id search_bar 0x7f050031
 int id search_button 0x7f050033

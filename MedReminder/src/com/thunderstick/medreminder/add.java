@@ -1,6 +1,5 @@
 package com.thunderstick.medreminder;
 
-import android.R;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.textservice.SpellCheckerSubtype;
@@ -13,7 +12,7 @@ public class add extends Activity
 {
 	TabHost tbhst;
 	TabSpec spec;
-}
+
 	protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add);
@@ -31,4 +30,5 @@ public class add extends Activity
         spec.setIndicator("Schedule");
         tbhst.addTab(spec);
 
+}
 }
