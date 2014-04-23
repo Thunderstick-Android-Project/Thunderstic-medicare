@@ -13,7 +13,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mainpage);
         
-        setContentView(R.layout.itemedit);
+        setContentView(R.layout.add);
         
         
         
