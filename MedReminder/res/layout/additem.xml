@@ -5,7 +5,7 @@
     android:orientation="vertical" >
 
     <TabHost
-        android:id="@android:id/tabhost"
+        android:id="@+id/tabhost"
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
 
@@ -26,14 +26,10 @@
                 android:layout_height="match_parent" >
 
                 <LinearLayout
-                    android:id="@+id/Item"
+                    android:id="@+id/tab1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical" >
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent" >
+                    android:orientation="horizontal" >
 
                     <TextView
                         android:id="@+id/textView1"
@@ -43,35 +39,6 @@
                         android:layout_marginTop="@dimen/abc_action_bar_progress_bar_size"
                         android:text="Medicine Name"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                    <ExpandableListView
-                        android:id="@+id/expandableListView1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/abc_action_bar_progress_bar_size"
-                        android:layout_weight="1" >
-
-                    </ExpandableListView>
-
-                    <TextView
-                        android:id="@+id/textView2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_below="@+id/expandableListView1"
-                        android:layout_marginLeft="@dimen/abc_dropdownitem_text_padding_right"
-                        android:layout_marginTop="@dimen/abc_action_bar_progress_bar_size"
-                        android:text="Image"
-                        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                    <ImageButton
-                        android:id="@+id/imageButton1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignTop="@+id/textView2"
-                        android:layout_marginLeft="55dp"
-                        android:layout_toRightOf="@+id/textView1"
-                        android:src="@drawable/ic_launcher" />
 
                     <TextView
                         android:id="@+id/textView3"
@@ -112,30 +79,62 @@
                         android:layout_toRightOf="@+id/textView1"
                         android:ems="10" />
 
-                    <Button
-                        android:id="@+id/button1"
+                    <EditText
+                        android:id="@+id/editText3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignRight="@+id/imageButton1"
-                        android:layout_below="@+id/editText2"
-                        android:layout_marginTop="38dp"
-                        android:text="Delete" />
-                   
-                    </RelativeLayout>
+                        android:layout_alignLeft="@+id/editText1"
+                        android:layout_alignTop="@+id/textView1"
+                        android:layout_marginLeft="17dp"
+                        android:ems="10" >
 
-                   
+                        <requestFocus />
+                    </EditText>
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textView1"
+                        android:layout_below="@+id/editText3"
+                        android:layout_marginTop="40dp"
+                        android:text="Image"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/editText1"
+                        android:layout_alignTop="@+id/textView2"
+                        android:text="Take a photo" />
+
                 </LinearLayout>
-                
-				 <LinearLayout
-                    android:id="@+id/Schedule"
+
+                <LinearLayout
+                    android:id="@+id/tab2"
                     android:layout_width="match_parent"
+<<<<<<< HEAD:MedReminder/res/layout/add.xml
                     android:layout_height="match_parent" 
                     android:orientation="vertical">
-    
+                    
+                    
+                    
+=======
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <RadioButton
+                            android:id="@+id/radioButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="48dp"
+                            android:text="Dose" />
+>>>>>>> 233935bc14a4a59409ff647fbcb2a00cd925246e:MedReminder/res/layout/additem.xml
                 </LinearLayout>
-    
+
+                
             </FrameLayout>
-            
         </LinearLayout>
     </TabHost>
 

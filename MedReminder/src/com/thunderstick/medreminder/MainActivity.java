@@ -1,17 +1,26 @@
 package com.thunderstick.medreminder;
 
+
+
+
+
+import com.thunderstick.medreminder.R;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Button;
+
+
 
 public class MainActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		
 		setContentView(R.layout.mainpage);
 
+	
 		Thread timer = new Thread() {
 
 			public void run() {
@@ -21,12 +30,14 @@ public class MainActivity extends Activity {
 					e.printStackTrace();
 				} finally {
 					Intent openMainActivity = new Intent(
-							"com.thunderstick.medreminder.add");
+							"com.thunderstick.medreminder.AddItem");
 					startActivity(openMainActivity);
 				}
 			}
 		};
+		
 		timer.start();
+		
 
 	}
 
