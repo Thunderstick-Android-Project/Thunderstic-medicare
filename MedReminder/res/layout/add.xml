@@ -83,14 +83,6 @@
                         android:layout_toRightOf="@+id/textView1"
                         android:ems="10" />
 
-                    <Button
-                        android:id="@+id/button1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/editText2"
-                        android:layout_marginTop="38dp"
-                        android:text="Delete" />
-
                     <EditText
                         android:id="@+id/editText3"
                         android:layout_width="wrap_content"
@@ -130,12 +122,7 @@
                     android:layout_height="match_parent" 
                     android:orientation="vertical">
                     
-                    <RadioButton
-                            android:id="@+id/radioButton1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="48dp"
-                            android:text="Dose" />
+                    
                     
                 </LinearLayout>
             </FrameLayout>
