@@ -30,99 +30,98 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal" >
+                    
+                     <LinearLayout
+                         android:layout_width="146dp"
+                         android:layout_height="262dp"
+                         android:orientation="vertical" >
 
                     <TextView
-                        android:id="@+id/textView1"
+                        android:id="@+id/itemname"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="@dimen/abc_dropdownitem_text_padding_right"
-                        android:layout_marginTop="@dimen/abc_action_bar_progress_bar_size"
-                        android:text="Medicine Name"
-                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                        android:text="Item Name"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginTop="30dip" />
 
                     <TextView
-                        android:id="@+id/textView3"
+                        android:id="@+id/itemimage"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignLeft="@+id/textView2"
-                        android:layout_centerVertical="true"
-                        android:text="Quantity"
-                        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                    <EditText
-                        android:id="@+id/editText1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignBottom="@+id/textView3"
-                        android:layout_alignLeft="@+id/editText2"
-                        android:layout_alignParentRight="true"
-                        android:layout_alignTop="@+id/textView3"
-                        android:ems="10" />
-
-                    <TextView
-                        android:id="@+id/textView4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignLeft="@+id/textView3"
-                        android:layout_below="@+id/textView3"
-                        android:layout_marginTop="44dp"
-                        android:text="Re-Order-Level"
-                        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                    <EditText
-                        android:id="@+id/editText2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignBottom="@+id/textView4"
-                        android:layout_alignParentRight="true"
-                        android:layout_alignTop="@+id/textView4"
-                        android:layout_toRightOf="@+id/textView1"
-                        android:ems="10" />
-
-                    <EditText
-                        android:id="@+id/editText3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignLeft="@+id/editText1"
-                        android:layout_alignTop="@+id/textView1"
-                        android:layout_marginLeft="17dp"
-                        android:ems="10" >
-
-                        <requestFocus />
-                    </EditText>
-
-                    <TextView
-                        android:id="@+id/textView2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignLeft="@+id/textView1"
-                        android:layout_below="@+id/editText3"
-                        android:layout_marginTop="40dp"
                         android:text="Image"
-                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_marginTop="20dip"
+                        android:layout_marginLeft="10dip" />
 
-                    <Button
-                        android:id="@+id/button2"
+                    <TextView
+                        android:id="@+id/itemqty"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignLeft="@+id/editText1"
-                        android:layout_alignTop="@+id/textView2"
-                        android:text="Take a photo" />
+                        android:text="Quantity"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginTop="90dip" />
+
+                    <TextView
+                        android:id="@+id/itemrol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Re-Order Level"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginTop="20dip" />
+
+                   
+                    </LinearLayout>
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="300dp"
+                         android:orientation="vertical" >
+
+                         <EditText
+                             android:id="@+id/txtitmname"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_marginTop="20dip"
+                             android:inputType="textPersonName" >
+
+                             <requestFocus />
+                         </EditText>
+
+                         <Button
+                             android:id="@+id/btnitemimg"
+                             android:layout_width="wrap_content"
+                             android:layout_height="80dp"
+                             android:layout_marginLeft="10dip"
+                             android:layout_marginTop="20dip"
+                             android:text="Take a Photo" />
+
+                         <EditText
+                             android:id="@+id/txtqty"
+                             android:layout_width="82dp"
+                             android:layout_height="wrap_content"
+                             android:inputType="number"
+                             android:layout_marginTop="20dip" />
+
+                         <EditText
+                             android:id="@+id/txtrol"
+                             android:layout_width="82dp"
+                             android:layout_height="wrap_content"
+                             android:inputType="number" />
+
+                     </LinearLayout>
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/tab2"
                     android:layout_width="match_parent"
-<<<<<<< HEAD:MedReminder/res/layout/add.xml
+
                     android:layout_height="match_parent" 
                     android:orientation="vertical">
-                    
-                    
-                    
-=======
-                    android:layout_height="match_parent"
-                    android:orientation="vertical" >
+
 
                     <RadioButton
                             android:id="@+id/radioButton1"
@@ -130,7 +129,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="48dp"
                             android:text="Dose" />
->>>>>>> 233935bc14a4a59409ff647fbcb2a00cd925246e:MedReminder/res/layout/additem.xml
+
                 </LinearLayout>
 
                 
