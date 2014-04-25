@@ -30,7 +30,7 @@ public class MainActivity extends Activity {
 					e.printStackTrace();
 				} finally {
 					Intent openMainActivity = new Intent(
-							"com.thunderstick.medreminder.AddItem");
+							"com.thunderstick.medreminder.Edititem");
 					startActivity(openMainActivity);
 				}
 			}
