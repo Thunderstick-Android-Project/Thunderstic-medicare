@@ -5,7 +5,7 @@
     android:orientation="vertical" >
 
     <TabHost
-        android:id="@android:id/tabhost"
+        android:id="@+id/tabhost"
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
 
@@ -29,113 +29,247 @@
                     android:id="@+id/Item"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical" >
+                    android:orientation="horizontal" >
+                    
+         
+                                  <LinearLayout
+                         android:layout_width="146dp"
+                         android:layout_height="match_parent"
+                         android:orientation="vertical" >
 
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent" >
-
-                    <TextView
-                        android:id="@+id/textView1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="@dimen/abc_dropdownitem_text_padding_right"
-                        android:layout_marginTop="@dimen/abc_action_bar_progress_bar_size"
-                        android:text="Medicine Name"
-                        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                    <ExpandableListView
-                        android:id="@+id/expandableListView1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/abc_action_bar_progress_bar_size"
-                        android:layout_weight="1" >
-
-                    </ExpandableListView>
+                        
 
                     <TextView
-                        android:id="@+id/textView2"
+                        android:id="@+id/itemname"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_below="@+id/expandableListView1"
-                        android:layout_marginLeft="@dimen/abc_dropdownitem_text_padding_right"
-                        android:layout_marginTop="@dimen/abc_action_bar_progress_bar_size"
+                        android:text="Item Name"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginTop="30dip" />
+
+                    <TextView
+                        android:id="@+id/itemimage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="Image"
-                        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                    <ImageButton
-                        android:id="@+id/imageButton1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignTop="@+id/textView2"
-                        android:layout_marginLeft="55dp"
-                        android:layout_toRightOf="@+id/textView1"
-                        android:src="@drawable/ic_launcher" />
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_marginTop="20dip"
+                        android:layout_marginLeft="10dip" />
 
                     <TextView
-                        android:id="@+id/textView3"
+                        android:id="@+id/itemqty"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignLeft="@+id/textView2"
-                        android:layout_centerVertical="true"
                         android:text="Quantity"
-                        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                    <EditText
-                        android:id="@+id/editText1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignBottom="@+id/textView3"
-                        android:layout_alignLeft="@+id/editText2"
-                        android:layout_alignParentRight="true"
-                        android:layout_alignTop="@+id/textView3"
-                        android:ems="10" />
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginTop="90dip" />
 
                     <TextView
-                        android:id="@+id/textView4"
+                        android:id="@+id/itemrol"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignLeft="@+id/textView3"
-                        android:layout_below="@+id/textView3"
-                        android:layout_marginTop="44dp"
-                        android:text="Re-Order-Level"
-                        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                    <EditText
-                        android:id="@+id/editText2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignBottom="@+id/textView4"
-                        android:layout_alignParentRight="true"
-                        android:layout_alignTop="@+id/textView4"
-                        android:layout_toRightOf="@+id/textView1"
-                        android:ems="10" />
+                        android:text="Re-Order Level"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginTop="20dip" />
 
                     <Button
                         android:id="@+id/button1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignRight="@+id/imageButton1"
-                        android:layout_below="@+id/editText2"
-                        android:layout_marginTop="38dp"
-                        android:text="Delete" />
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="50dp"
+                        android:text="Done" />
                    
-                    </RelativeLayout>
+                    </LinearLayout>
 
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:orientation="vertical" >
+
+                         <EditText
+                             android:id="@+id/txtitmname"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_marginTop="20dip"
+                             android:inputType="textPersonName" >
+
+                             <requestFocus />
+                         </EditText>
+
+                         <Button
+                             android:id="@+id/btnitemimg"
+                             android:layout_width="wrap_content"
+                             android:layout_height="80dp"
+                             android:layout_marginLeft="10dip"
+                             android:layout_marginTop="20dip"
+                             android:text="Take a Photo" />
+
+                         <EditText
+                             android:id="@+id/txtqty"
+                             android:layout_width="82dp"
+                             android:layout_height="wrap_content"
+                             android:inputType="number"
+                             android:layout_marginTop="20dip" />
+
+                         <EditText
+                             android:id="@+id/txtrol"
+                             android:layout_width="82dp"
+                             android:layout_height="wrap_content"
+                             android:inputType="number" />
+
+                         <Button
+                             android:id="@+id/button2"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginLeft="40dp"
+                             android:layout_marginTop="50dp"
+                             android:text="Delete" />
+
+                     </LinearLayout>
+                                 
+                                 
+                            
                    
+                      
                 </LinearLayout>
-                
-				 <LinearLayout
-                    android:id="@+id/Schedule"
+
+                    
+                <LinearLayout
+                    android:id="@+id/Shedule"
                     android:layout_width="match_parent"
+
                     android:layout_height="match_parent" 
                     android:orientation="vertical">
-    
+
+
+                    
+                    <LinearLayout
+                        android:layout_width="158dp"
+                        android:layout_height="410dp"
+                        android:orientation="vertical" >
+
+                        <EditText
+                            android:id="@+id/editText1"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp" >
+
+                            <requestFocus />
+                        </EditText>
+
+                        <RadioButton
+                            android:id="@+id/radioButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/abc_action_bar_progress_bar_size"
+                            android:text="Time Slot" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/abc_action_bar_progress_bar_size"
+                            android:text="Morning" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/abc_action_bar_progress_bar_size"
+                            android:text="Afternoon" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/abc_action_bar_progress_bar_size"
+                            android:text=" Night" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/abc_action_bar_progress_bar_size"
+                            android:text="Time Gap" />
+
+                        <EditText
+                            android:id="@+id/editText3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="410dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:text="Amount"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <EditText
+                            android:id="@+id/editText2"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="5dp" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="45dp"
+                            android:text="Meals"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:text="Before" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:text="After" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="125dp"
+                            android:text="Hours"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <Button
+                            android:id="@+id/button1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp"
+                            android:text="Delete" />
+                
+                    </LinearLayout>
+                    
+
                 </LinearLayout>
-    
+
+                
             </FrameLayout>
-            
         </LinearLayout>
     </TabHost>
 
