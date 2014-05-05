@@ -40,7 +40,7 @@
                         
 
                     <TextView
-                        android:id="@+id/itemname"
+                        android:id="@+id/ed_itemname"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Item Name"
@@ -49,7 +49,7 @@
                         android:layout_marginTop="30dip" />
 
                     <TextView
-                        android:id="@+id/itemimage"
+                        android:id="@+id/ed_itemimage"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Image"
@@ -58,7 +58,7 @@
                         android:layout_marginLeft="10dip" />
 
                     <TextView
-                        android:id="@+id/itemqty"
+                        android:id="@+id/ed_itemqty"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Quantity"
@@ -67,7 +67,7 @@
                         android:layout_marginTop="90dip" />
 
                     <TextView
-                        android:id="@+id/itemrol"
+                        android:id="@+id/ed_itemrol"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Re-Order Level"
@@ -76,7 +76,7 @@
                         android:layout_marginTop="20dip" />
 
                     <Button
-                        android:id="@+id/button1"
+                        android:id="@+id/ed_btndone"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="40dp"
@@ -91,7 +91,7 @@
                          android:orientation="vertical" >
 
                          <EditText
-                             android:id="@+id/txtitmname"
+                             android:id="@+id/ed_txtitemname"
                              android:layout_width="match_parent"
                              android:layout_height="wrap_content"
                              android:layout_marginTop="20dip"
@@ -101,7 +101,7 @@
                          </EditText>
 
                          <Button
-                             android:id="@+id/btnitemimg"
+                             android:id="@+id/ed_btnitemimg"
                              android:layout_width="wrap_content"
                              android:layout_height="80dp"
                              android:layout_marginLeft="10dip"
@@ -109,20 +109,20 @@
                              android:text="Take a Photo" />
 
                          <EditText
-                             android:id="@+id/txtqty"
+                             android:id="@+id/ed_txtqty"
                              android:layout_width="82dp"
                              android:layout_height="wrap_content"
                              android:inputType="number"
                              android:layout_marginTop="20dip" />
 
                          <EditText
-                             android:id="@+id/txtrol"
+                             android:id="@+id/ed_txtrol"
                              android:layout_width="82dp"
                              android:layout_height="wrap_content"
                              android:inputType="number" />
 
                          <Button
-                             android:id="@+id/button2"
+                             android:id="@+id/ed_btndelete"
                              android:layout_width="wrap_content"
                              android:layout_height="wrap_content"
                              android:layout_marginLeft="40dp"
@@ -153,7 +153,7 @@
                         android:orientation="vertical" >
 
                         <EditText
-                            android:id="@+id/editText1"
+                            android:id="@+id/ed_txtname"
                             android:layout_width="150dp"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="20dp" >
@@ -162,42 +162,42 @@
                         </EditText>
 
                         <RadioButton
-                            android:id="@+id/radioButton2"
+                            android:id="@+id/ed_radiotime"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/abc_action_bar_progress_bar_size"
                             android:text="Time Slot" />
 
                         <CheckBox
-                            android:id="@+id/checkBox1"
+                            android:id="@+id/ed_checkmor"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="@dimen/abc_action_bar_progress_bar_size"
                             android:text="Morning" />
 
                         <CheckBox
-                            android:id="@+id/checkBox2"
+                            android:id="@+id/ed_checkafter"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="@dimen/abc_action_bar_progress_bar_size"
                             android:text="Afternoon" />
 
                         <CheckBox
-                            android:id="@+id/checkBox3"
+                            android:id="@+id/ed_checknight"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="@dimen/abc_action_bar_progress_bar_size"
                             android:text=" Night" />
 
                         <RadioButton
-                            android:id="@+id/radioButton5"
+                            android:id="@+id/ed_radiotimeg"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/abc_action_bar_progress_bar_size"
                             android:text="Time Gap" />
 
                         <EditText
-                            android:id="@+id/editText3"
+                            android:id="@+id/ed_txthr"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="number" />
@@ -210,7 +210,7 @@
                         android:orientation="vertical" >
 
                         <TextView
-                            android:id="@+id/textView1"
+                            android:id="@+id/ed_amt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="25dp"
@@ -218,14 +218,14 @@
                             android:textAppearance="?android:attr/textAppearanceMedium" />
 
                         <EditText
-                            android:id="@+id/editText2"
+                            android:id="@+id/ed_txtamt"
                             android:layout_width="60dp"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="25dp"
                             android:layout_marginTop="5dp" />
 
                         <TextView
-                            android:id="@+id/textView2"
+                            android:id="@+id/ed_meals"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="25dp"
@@ -234,21 +234,21 @@
                             android:textAppearance="?android:attr/textAppearanceMedium" />
 
                         <RadioButton
-                            android:id="@+id/radioButton3"
+                            android:id="@+id/ed_radiobef"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="30dp"
                             android:text="Before" />
 
                         <RadioButton
-                            android:id="@+id/radioButton4"
+                            android:id="@+id/ed_radioaft"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="30dp"
                             android:text="After" />
 
                         <TextView
-                            android:id="@+id/textView3"
+                            android:id="@+id/ed_hrs"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="125dp"
@@ -256,12 +256,12 @@
                             android:textAppearance="?android:attr/textAppearanceMedium" />
 
                         <Button
-                            android:id="@+id/button1"
+                            android:id="@+id/ed_btndone2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:layout_marginTop="20dp"
-                            android:text="Delete" />
+                            android:text="Done" />
                 
                     </LinearLayout>
                     
